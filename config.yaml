@@ -1,0 +1,59 @@
+# triage-bench configuration. Code reads model names, prices, and loop bounds
+# from here and nowhere else.
+
+agents:
+  # The revision step reuses the triage settings: it's the same agent answering its critic.
+  triage:
+    model: claude-opus-5-5
+    effort: medium        # low | medium | high | xhigh. Tune on the dev split only.
+    max_tokens: 8000      # thinking counts against this; a truncated call is an AgentError
+  challenger:
+    model: claude-opus-5-5
+    effort: medium
+    max_tokens: 8000      # thinking counts against this; a truncated call is an AgentError
+
+generator:
+  # Writes the synthetic cases (data/generate.py). A different model from the triage agent,
+  # so the agent under test isn't grading text written in its own style.
+  model: claude-sonnet-5-5
+  effort: low
+  max_tokens: 4000
+  seed: 20261023        # fixes the sampled briefs and the dev/test split
+  cases: 200
+  hard_share: 0.35      # the handoff's floor is 0.25
+  test_size: 60         # the gold set Aneesh labels by hand
+
+loop:
+  # Revision rounds allowed before an unresolved disagreement goes to Human-Review.
+  max_revisions: 1
+
+rules:
+  # Property-local hours that count as a time-sensitive signal for the lockout rule.
+  after_hours_start: "22:00"
+  after_hours_end: "06:00"
+
+# The four configurations the eval compares, plus model pairings.
+pipelines:
+  A: {description: "Triage agent alone", rules: false, challenger: false}
+  B: {description: "Triage + rules", rules: true, challenger: false}
+  C: {description: "Triage + challenger", rules: false, challenger: true}
+  D: {description: "Triage + challenger + rules (full system)", rules: true, challenger: true}
+  # Does the challenger earn its cost when the first pass is weaker? (Aneesh, 2026-10-26: on Opus
+  # triage it caught 20/20 planted errors but never disputed routing on 140 live dev cases.)
+  # Rules off in both, so the challenger is the only difference. Revision runs on the triage model.
+  E: {description: "Haiku triage alone", rules: false, challenger: false, triage_model: claude-haiku-5-5}
+  F: {description: "Haiku triage + Opus challenger", rules: false, challenger: true,
+      triage_model: claude-haiku-5-5, challenger_model: claude-opus-5-5}
+
+# USD per million tokens, from platform.claude.com/docs/en/about-claude/pricing,
+# checked 2026-10-22. cache_write is the 5-minute rate. Haiku 5.5 rates are for
+# prompts up to 100K tokens, which every case here is.
+prices:
+  claude-opus-5-5:   {input: 4.00,  output: 20.00, cache_write: 5.00,  cache_read: 0.20}
+  claude-sonnet-5-5: {input: 2.00,  output: 10.00, cache_write: 2.50,  cache_read: 0.10}
+  claude-haiku-5-5:  {input: 0.10,  output: 0.50,  cache_write: 0.125, cache_read: 0.01}
+  claude-fable-5-1:  {input: 10.00, output: 50.00, cache_write: 12.50, cache_read: 0.25}
+
+budget:
+  # Hard stop for one full eval run (all pipelines on the test split), in USD. Aneesh, 2026-10-22.
+  ceiling_usd: 20

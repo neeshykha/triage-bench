@@ -1,0 +1,153 @@
+{
+  "run": "20261029-231209-eval",
+  "saved": "2026-11-03T11:13",
+  "cases": {
+    "NG-003": {
+      "verdict": "mine",
+      "why": "one issue is we Don't use P4 so need to reassess this"
+    },
+    "NG-005": {
+      "verdict": "both",
+      "why": "P2 default was that they stated they were concerned that leak sensors and the lock weren't being monitored during the time but you might be right. It's not an explicit issue that needs priority",
+      "category": "Hub & Connectivity",
+      "priority": "P3"
+    },
+    "NG-006": {
+      "verdict": "mine",
+      "why": "We don't use P4"
+    },
+    "NG-024": {
+      "verdict": "system",
+      "why": "Yeah. Offline status should probably be P3 but I always default to P2.",
+      "category": "Hub & Connectivity",
+      "priority": "P3"
+    },
+    "NG-027": {
+      "verdict": "system",
+      "why": "",
+      "category": "Property Manager Admin",
+      "priority": "P4"
+    },
+    "NG-038": {
+      "verdict": "mine",
+      "why": "Lack of verification code is something that needs to happen quickly because the temporary code expires [timing detail removed for publication]"
+    },
+    "NG-041": {
+      "verdict": "system",
+      "why": "",
+      "category": "Resident App & Account",
+      "priority": "P3"
+    },
+    "NG-059": {
+      "verdict": "system",
+      "why": "Yeah with one week of time, this probably shouldn't have been p2",
+      "category": "Resident App & Account",
+      "priority": "P3"
+    },
+    "NG-060": {
+      "verdict": "system",
+      "why": "It's certainly P1 if it's global. I feel like hub and connectivity, we've always utilized with just one hub but maybe we can split this out in an easier way",
+      "category": "Hub & Connectivity",
+      "priority": "P1"
+    },
+    "NG-064": {
+      "verdict": "mine",
+      "why": "It really should be access control. gateway and hub/connectivity should be different"
+    },
+    "NG-068": {
+      "verdict": "both",
+      "why": "her issue is app access, but i guess access is the base issue",
+      "category": "Access & Locks",
+      "priority": "P1"
+    },
+    "NG-069": {
+      "verdict": "mine",
+      "why": "We don't utilize P4"
+    },
+    "NG-079": {
+      "verdict": "system",
+      "why": "really should be ‘devices’ or something",
+      "category": "Hub & Connectivity",
+      "priority": "P3"
+    },
+    "NG-095": {
+      "verdict": "mine",
+      "why": "These things are loud man. That can be very frustrating"
+    },
+    "NG-096": {
+      "verdict": "mine",
+      "why": "We don't use P4"
+    },
+    "NG-097": {
+      "verdict": "mine",
+      "why": "I don't actually think mine's right. I think there should have been an app one. That is the base issue, right? The app is not doing it correctly"
+    },
+    "NG-113": {
+      "verdict": "mine",
+      "why": "Battery is hardware"
+    },
+    "NG-119": {
+      "verdict": "system",
+      "why": "",
+      "category": "Resident App & Account",
+      "priority": "P3"
+    },
+    "NG-127": {
+      "verdict": "system",
+      "why": "",
+      "category": "Billing (property-level)",
+      "priority": "P4"
+    },
+    "NG-131": {
+      "verdict": "system",
+      "why": "Yeah I guess it's not a priority event but I think, because it mentioned legal, that's why I defaulted. Maybe we can split the difference",
+      "category": "Billing (property-level)",
+      "priority": "P3"
+    },
+    "NG-138": {
+      "verdict": "mine",
+      "why": "We don't use P4"
+    },
+    "NG-139": {
+      "verdict": "system",
+      "why": "",
+      "category": "Access & Locks",
+      "priority": "P1"
+    },
+    "NG-158": {
+      "verdict": "system",
+      "why": "",
+      "category": "Access & Locks",
+      "priority": "P1"
+    },
+    "NG-159": {
+      "verdict": "mine",
+      "why": "hardware is damaged. needs replacement"
+    },
+    "NG-161": {
+      "verdict": "mine",
+      "why": "battery would fall under hardware/rma"
+    },
+    "NG-189": {
+      "verdict": "mine",
+      "why": "Mismatch between actual and what the app is showing is an app-side issue"
+    },
+    "NG-190": {
+      "verdict": "system",
+      "why": "I guess if they have any access P3 is fine",
+      "category": "Hardware/RMA",
+      "priority": "P3"
+    },
+    "NG-196": {
+      "verdict": "mine",
+      "why": "temp change in app is issue not at the wall"
+    },
+    "NG-200": {
+      "verdict": "system",
+      "why": "",
+      "category": "Access & Locks",
+      "priority": "P1"
+    }
+  },
+  "rules": ""
+}

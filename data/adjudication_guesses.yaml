@@ -1,0 +1,33 @@
+# Claude's guesses at why every pipeline disagreed with Aneesh's gold label on these cases
+# (gold-set eval 20261029-231209-eval). Shown on the adjudication page, labeled as guesses;
+# his verdicts and reasons on that page are what count.
+NG-003: You may bump repeat contacts a level ("third time writing"); the taxonomy has no rule about repeats.
+NG-005: A problem that recurs every night and leaves the lock and sensors unmonitored; you may bump persistent problems.
+NG-006: A warranty question can be product terms (Property Manager Admin) or contract terms (Billing). Both go to PM-Success.
+NG-024: A hub offline makes every device unreachable from the app; you may count that as a core device down (P2).
+NG-027: The models filed by where it's done (the portal) and called it a how-to; you filed by what it's about (access codes), with a deadline next week.
+NG-033: Push notifications that stopped working, filed as Spam/Other. Possibly a mis-click.
+NG-038: Can't get into the app at all. The taxonomy says app and login problems are P3; you rated it P2.
+NG-041: Same as NG-038, can't log in at all, by SMS at 5:38 AM.
+NG-059: The app invite missing a week before move-in. The taxonomy says app problems are P3; you rated it P2.
+NG-060: A building outage reported by the front desk. You filed by who reported it; the models by what failed. The outage flag routes both to Tier2.
+NG-064: Same as NG-060, reported by a property manager.
+NG-068: Locked out because the phone holding the mobile key died. You filed by the mobile key (App); the models by the lockout (Access).
+NG-069: A how-to (changing the account email) in Korean; you may rate a how-to with no self-service path at P3 instead of P4.
+NG-079: Pairing a smart plug. The taxonomy, and your NG-039 call, put pairing under Hub & Connectivity. Possibly a slip.
+NG-095: False leak alerts five nights in one week. Your note says multiple days of the problem should be checked.
+NG-096: Two questions (vacation mode, move-out) in one frustrated text; the taxonomy calls how-tos P4.
+NG-097: The same situation as NG-196 (app slow, wall control instant), which you labeled Resident App & Account P3. One situation, two labels.
+NG-113: A week of low-battery warnings on the lock. You filed it as Hardware/RMA and rated it up for persistence; the taxonomy's Hardware/RMA is damaged or dead devices.
+NG-119: A phishing text using the Northgate name. You flagged safety and rated it P2; the taxonomy has no rule for impersonation.
+NG-127: Changing the billing contact. You filed it as account admin, the models as billing (same queue), and you rated it P3, not P4.
+NG-131: An attorney and a formal complaint over an auto-renewal. You rated it P1; the taxonomy has a legal flag but no priority rule for legal threats.
+NG-138: A question about one invoice line item. You rated it P3; the taxonomy would call a general question P4.
+NG-139: Locked out on move-in day with movers waiting. You rated it P2; the taxonomy says "can't get into their unit right now" is P1.
+NG-158: Standing in the hallway with no way in, right now. You rated it P2, while you rated other live lockouts P1. Possibly a slip, or a rule the taxonomy lacks.
+NG-159: A lock damaged in a break-in, plus an old code that still works. You filed by the damage (Hardware/RMA), the models by the lock. The taxonomy's definition supports yours.
+NG-161: Same as NG-113, a week of low-battery warnings, by SMS. You filed it as Hardware/RMA.
+NG-189: The app says locked, the door is unlocked, and it won't lock from the keypad either. You filed it as an app problem at P3; the models as a lock that can't secure the door, P2.
+NG-190: A cracked keypad, with the mobile key still working. You rated it P2 for the damage; the taxonomy says a workaround makes it P3.
+NG-196: The same situation as NG-097, labeled differently.
+NG-200: Same as NG-139, and you moved it to match on Oct 29.

@@ -1,0 +1,2374 @@
+{
+  "eval_run": "20261029-231209-eval",
+  "pipelines": {
+    "A": {
+      "cases": 60,
+      "both": 25,
+      "generator_both": 47,
+      "category": 43,
+      "category_ci": [
+        0.5923247495026482,
+        0.8149332139569141
+      ],
+      "priority": 36,
+      "priority_ci": [
+        0.47365824394206846,
+        0.714306969962345
+      ],
+      "queue": 46,
+      "p1_recall": [
+        15,
+        16
+      ],
+      "p1_recall_ci": [
+        0.7167073163197013,
+        0.9888809426916687
+      ],
+      "p1_precision": [
+        15,
+        19
+      ],
+      "under_triage": [
+        "NG-003",
+        "NG-005",
+        "NG-024",
+        "NG-027",
+        "NG-038",
+        "NG-041",
+        "NG-059",
+        "NG-069",
+        "NG-091",
+        "NG-095",
+        "NG-096",
+        "NG-113",
+        "NG-119",
+        "NG-127",
+        "NG-131",
+        "NG-138",
+        "NG-190"
+      ],
+      "over_triage": [
+        "NG-033",
+        "NG-097",
+        "NG-139",
+        "NG-158",
+        "NG-189",
+        "NG-194",
+        "NG-200"
+      ],
+      "priority_matrix": {
+        "P1": {
+          "P1": 15,
+          "P2": 0,
+          "P3": 0,
+          "P4": 1,
+          "none": 0
+        },
+        "P2": {
+          "P1": 4,
+          "P2": 4,
+          "P3": 10,
+          "P4": 0,
+          "none": 0
+        },
+        "P3": {
+          "P1": 0,
+          "P2": 1,
+          "P3": 13,
+          "P4": 6,
+          "none": 0
+        },
+        "P4": {
+          "P1": 0,
+          "P2": 0,
+          "P3": 2,
+          "P4": 4,
+          "none": 0
+        }
+      },
+      "category_confusions": [
+        {
+          "gold": "Resident App & Account",
+          "got": "Access & Locks",
+          "count": 3
+        },
+        {
+          "gold": "Hardware/RMA",
+          "got": "Access & Locks",
+          "count": 3
+        },
+        {
+          "gold": "Property Manager Admin",
+          "got": "Billing (property-level)",
+          "count": 2
+        },
+        {
+          "gold": "Spam/Other",
+          "got": "Resident App & Account",
+          "count": 2
+        },
+        {
+          "gold": "Property Manager Admin",
+          "got": "Hub & Connectivity",
+          "count": 2
+        },
+        {
+          "gold": "Access & Locks",
+          "got": "Hardware/RMA",
+          "count": 1
+        },
+        {
+          "gold": "Access & Locks",
+          "got": "Property Manager Admin",
+          "count": 1
+        },
+        {
+          "gold": "Resident App & Account",
+          "got": "Hub & Connectivity",
+          "count": 1
+        },
+        {
+          "gold": "Hub & Connectivity",
+          "got": "Thermostat/HVAC Controls",
+          "count": 1
+        },
+        {
+          "gold": "Resident App & Account",
+          "got": "Thermostat/HVAC Controls",
+          "count": 1
+        }
+      ],
+      "human_review": 0,
+      "revisions": 0,
+      "rule_overrides": 0,
+      "injection": {
+        "cases": 3,
+        "flagged": 3,
+        "unswayed": 2
+      },
+      "challenger": {
+        "challenged": 0,
+        "catch": 0,
+        "false_alarm": 0,
+        "miss": 0,
+        "agreed_right": 0,
+        "fixed": 0,
+        "broke": 0,
+        "draft_objections": 0,
+        "draft_accepted": 0
+      },
+      "cost_usd": 0.6167,
+      "cost_per_case": 0.01028,
+      "latency_p50": 4.79,
+      "latency_p95": 7.87,
+      "misses": [
+        {
+          "case_id": "NG-003",
+          "gold": "Access & Locks / P2",
+          "got": "Access & Locks / P3",
+          "tags": [
+            "duplicate_followup"
+          ]
+        },
+        {
+          "case_id": "NG-004",
+          "gold": "Access & Locks / P1",
+          "got": "Hardware/RMA / P1",
+          "tags": [
+            "non_english"
+          ]
+        },
+        {
+          "case_id": "NG-005",
+          "gold": "Hub & Connectivity / P2",
+          "got": "Hub & Connectivity / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-006",
+          "gold": "Property Manager Admin / P4",
+          "got": "Billing (property-level) / P4",
+          "tags": [
+            "non_english"
+          ]
+        },
+        {
+          "case_id": "NG-024",
+          "gold": "Hub & Connectivity / P2",
+          "got": "Hub & Connectivity / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-027",
+          "gold": "Access & Locks / P3",
+          "got": "Property Manager Admin / P4",
+          "tags": []
+        },
+        {
+          "case_id": "NG-033",
+          "gold": "Spam/Other / P4",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-038",
+          "gold": "Resident App & Account / P2",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-041",
+          "gold": "Resident App & Account / P2",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-059",
+          "gold": "Resident App & Account / P2",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-060",
+          "gold": "Property Manager Admin / P1",
+          "got": "Hub & Connectivity / P1",
+          "tags": [
+            "pm_vs_resident"
+          ]
+        },
+        {
+          "case_id": "NG-064",
+          "gold": "Property Manager Admin / P1",
+          "got": "Hub & Connectivity / P1",
+          "tags": []
+        },
+        {
+          "case_id": "NG-068",
+          "gold": "Resident App & Account / P1",
+          "got": "Access & Locks / P1",
+          "tags": [
+            "pm_vs_resident"
+          ]
+        },
+        {
+          "case_id": "NG-069",
+          "gold": "Resident App & Account / P3",
+          "got": "Resident App & Account / P4",
+          "tags": [
+            "non_english"
+          ]
+        },
+        {
+          "case_id": "NG-075",
+          "gold": "Spam/Other / P4",
+          "got": "Resident App & Account / P4",
+          "tags": []
+        },
+        {
+          "case_id": "NG-079",
+          "gold": "Resident App & Account / P3",
+          "got": "Hub & Connectivity / P3",
+          "tags": [
+            "injection"
+          ]
+        },
+        {
+          "case_id": "NG-089",
+          "gold": "Resident App & Account / P1",
+          "got": "Access & Locks / P1",
+          "tags": [
+            "ambiguous_category"
+          ]
+        },
+        {
+          "case_id": "NG-091",
+          "gold": "Billing (property-level) / P3",
+          "got": "Billing (property-level) / P4",
+          "tags": []
+        },
+        {
+          "case_id": "NG-095",
+          "gold": "Leak/Sensor Alert / P2",
+          "got": "Leak/Sensor Alert / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-096",
+          "gold": "Thermostat/HVAC Controls / P3",
+          "got": "Thermostat/HVAC Controls / P4",
+          "tags": [
+            "two_issues"
+          ]
+        },
+        {
+          "case_id": "NG-097",
+          "gold": "Hub & Connectivity / P4",
+          "got": "Thermostat/HVAC Controls / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-113",
+          "gold": "Hardware/RMA / P2",
+          "got": "Access & Locks / P3",
+          "tags": [
+            "angry_caps"
+          ]
+        },
+        {
+          "case_id": "NG-119",
+          "gold": "Resident App & Account / P2",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-127",
+          "gold": "Property Manager Admin / P3",
+          "got": "Billing (property-level) / P4",
+          "tags": []
+        },
+        {
+          "case_id": "NG-131",
+          "gold": "Billing (property-level) / P1",
+          "got": "Billing (property-level) / P4",
+          "tags": [
+            "angry_caps"
+          ]
+        },
+        {
+          "case_id": "NG-138",
+          "gold": "Billing (property-level) / P3",
+          "got": "Billing (property-level) / P4",
+          "tags": []
+        },
+        {
+          "case_id": "NG-139",
+          "gold": "Access & Locks / P2",
+          "got": "Access & Locks / P1",
+          "tags": []
+        },
+        {
+          "case_id": "NG-158",
+          "gold": "Access & Locks / P2",
+          "got": "Access & Locks / P1",
+          "tags": []
+        },
+        {
+          "case_id": "NG-159",
+          "gold": "Hardware/RMA / P1",
+          "got": "Access & Locks / P1",
+          "tags": [
+            "two_issues"
+          ]
+        },
+        {
+          "case_id": "NG-161",
+          "gold": "Hardware/RMA / P3",
+          "got": "Access & Locks / P3",
+          "tags": [
+            "short_sms"
+          ]
+        },
+        {
+          "case_id": "NG-189",
+          "gold": "Resident App & Account / P3",
+          "got": "Access & Locks / P2",
+          "tags": []
+        },
+        {
+          "case_id": "NG-190",
+          "gold": "Hardware/RMA / P2",
+          "got": "Hardware/RMA / P3",
+          "tags": [
+            "ambiguous_category"
+          ]
+        },
+        {
+          "case_id": "NG-194",
+          "gold": "Access & Locks / P2",
+          "got": "Access & Locks / P1",
+          "tags": [
+            "angry_caps"
+          ]
+        },
+        {
+          "case_id": "NG-196",
+          "gold": "Resident App & Account / P3",
+          "got": "Thermostat/HVAC Controls / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-200",
+          "gold": "Access & Locks / P2",
+          "got": "Access & Locks / P1",
+          "tags": []
+        }
+      ]
+    },
+    "B": {
+      "cases": 60,
+      "both": 25,
+      "generator_both": 46,
+      "category": 43,
+      "category_ci": [
+        0.5923247495026482,
+        0.8149332139569141
+      ],
+      "priority": 36,
+      "priority_ci": [
+        0.47365824394206846,
+        0.714306969962345
+      ],
+      "queue": 47,
+      "p1_recall": [
+        15,
+        16
+      ],
+      "p1_recall_ci": [
+        0.7167073163197013,
+        0.9888809426916687
+      ],
+      "p1_precision": [
+        15,
+        18
+      ],
+      "under_triage": [
+        "NG-003",
+        "NG-005",
+        "NG-024",
+        "NG-027",
+        "NG-038",
+        "NG-041",
+        "NG-059",
+        "NG-069",
+        "NG-091",
+        "NG-095",
+        "NG-096",
+        "NG-113",
+        "NG-119",
+        "NG-122",
+        "NG-127",
+        "NG-131",
+        "NG-138",
+        "NG-190"
+      ],
+      "over_triage": [
+        "NG-033",
+        "NG-097",
+        "NG-139",
+        "NG-158",
+        "NG-189",
+        "NG-200"
+      ],
+      "priority_matrix": {
+        "P1": {
+          "P1": 15,
+          "P2": 0,
+          "P3": 1,
+          "P4": 0,
+          "none": 0
+        },
+        "P2": {
+          "P1": 3,
+          "P2": 5,
+          "P3": 10,
+          "P4": 0,
+          "none": 0
+        },
+        "P3": {
+          "P1": 0,
+          "P2": 1,
+          "P3": 12,
+          "P4": 7,
+          "none": 0
+        },
+        "P4": {
+          "P1": 0,
+          "P2": 0,
+          "P3": 2,
+          "P4": 4,
+          "none": 0
+        }
+      },
+      "category_confusions": [
+        {
+          "gold": "Hardware/RMA",
+          "got": "Access & Locks",
+          "count": 3
+        },
+        {
+          "gold": "Access & Locks",
+          "got": "Hardware/RMA",
+          "count": 2
+        },
+        {
+          "gold": "Property Manager Admin",
+          "got": "Billing (property-level)",
+          "count": 2
+        },
+        {
+          "gold": "Spam/Other",
+          "got": "Resident App & Account",
+          "count": 2
+        },
+        {
+          "gold": "Property Manager Admin",
+          "got": "Hub & Connectivity",
+          "count": 2
+        },
+        {
+          "gold": "Resident App & Account",
+          "got": "Access & Locks",
+          "count": 2
+        },
+        {
+          "gold": "Access & Locks",
+          "got": "Property Manager Admin",
+          "count": 1
+        },
+        {
+          "gold": "Resident App & Account",
+          "got": "Hub & Connectivity",
+          "count": 1
+        },
+        {
+          "gold": "Hub & Connectivity",
+          "got": "Thermostat/HVAC Controls",
+          "count": 1
+        },
+        {
+          "gold": "Resident App & Account",
+          "got": "Thermostat/HVAC Controls",
+          "count": 1
+        }
+      ],
+      "human_review": 0,
+      "revisions": 0,
+      "rule_overrides": 0,
+      "injection": {
+        "cases": 3,
+        "flagged": 3,
+        "unswayed": 2
+      },
+      "challenger": {
+        "challenged": 0,
+        "catch": 0,
+        "false_alarm": 0,
+        "miss": 0,
+        "agreed_right": 0,
+        "fixed": 0,
+        "broke": 0,
+        "draft_objections": 0,
+        "draft_accepted": 0
+      },
+      "cost_usd": 0.6169,
+      "cost_per_case": 0.01028,
+      "latency_p50": 4.99,
+      "latency_p95": 8.61,
+      "misses": [
+        {
+          "case_id": "NG-003",
+          "gold": "Access & Locks / P2",
+          "got": "Access & Locks / P3",
+          "tags": [
+            "duplicate_followup"
+          ]
+        },
+        {
+          "case_id": "NG-004",
+          "gold": "Access & Locks / P1",
+          "got": "Hardware/RMA / P1",
+          "tags": [
+            "non_english"
+          ]
+        },
+        {
+          "case_id": "NG-005",
+          "gold": "Hub & Connectivity / P2",
+          "got": "Hub & Connectivity / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-006",
+          "gold": "Property Manager Admin / P4",
+          "got": "Billing (property-level) / P4",
+          "tags": [
+            "non_english"
+          ]
+        },
+        {
+          "case_id": "NG-024",
+          "gold": "Hub & Connectivity / P2",
+          "got": "Hub & Connectivity / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-027",
+          "gold": "Access & Locks / P3",
+          "got": "Property Manager Admin / P4",
+          "tags": []
+        },
+        {
+          "case_id": "NG-033",
+          "gold": "Spam/Other / P4",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-038",
+          "gold": "Resident App & Account / P2",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-041",
+          "gold": "Resident App & Account / P2",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-059",
+          "gold": "Resident App & Account / P2",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-060",
+          "gold": "Property Manager Admin / P1",
+          "got": "Hub & Connectivity / P1",
+          "tags": [
+            "pm_vs_resident"
+          ]
+        },
+        {
+          "case_id": "NG-064",
+          "gold": "Property Manager Admin / P1",
+          "got": "Hub & Connectivity / P1",
+          "tags": []
+        },
+        {
+          "case_id": "NG-068",
+          "gold": "Resident App & Account / P1",
+          "got": "Access & Locks / P1",
+          "tags": [
+            "pm_vs_resident"
+          ]
+        },
+        {
+          "case_id": "NG-069",
+          "gold": "Resident App & Account / P3",
+          "got": "Resident App & Account / P4",
+          "tags": [
+            "non_english"
+          ]
+        },
+        {
+          "case_id": "NG-075",
+          "gold": "Spam/Other / P4",
+          "got": "Resident App & Account / P4",
+          "tags": []
+        },
+        {
+          "case_id": "NG-079",
+          "gold": "Resident App & Account / P3",
+          "got": "Hub & Connectivity / P3",
+          "tags": [
+            "injection"
+          ]
+        },
+        {
+          "case_id": "NG-091",
+          "gold": "Billing (property-level) / P3",
+          "got": "Billing (property-level) / P4",
+          "tags": []
+        },
+        {
+          "case_id": "NG-095",
+          "gold": "Leak/Sensor Alert / P2",
+          "got": "Leak/Sensor Alert / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-096",
+          "gold": "Thermostat/HVAC Controls / P3",
+          "got": "Thermostat/HVAC Controls / P4",
+          "tags": [
+            "two_issues"
+          ]
+        },
+        {
+          "case_id": "NG-097",
+          "gold": "Hub & Connectivity / P4",
+          "got": "Thermostat/HVAC Controls / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-113",
+          "gold": "Hardware/RMA / P2",
+          "got": "Access & Locks / P3",
+          "tags": [
+            "angry_caps"
+          ]
+        },
+        {
+          "case_id": "NG-119",
+          "gold": "Resident App & Account / P2",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-122",
+          "gold": "Move-in/Move-out Provisioning / P3",
+          "got": "Move-in/Move-out Provisioning / P4",
+          "tags": [
+            "ambiguous_category"
+          ]
+        },
+        {
+          "case_id": "NG-127",
+          "gold": "Property Manager Admin / P3",
+          "got": "Billing (property-level) / P4",
+          "tags": []
+        },
+        {
+          "case_id": "NG-131",
+          "gold": "Billing (property-level) / P1",
+          "got": "Billing (property-level) / P3",
+          "tags": [
+            "angry_caps"
+          ]
+        },
+        {
+          "case_id": "NG-138",
+          "gold": "Billing (property-level) / P3",
+          "got": "Billing (property-level) / P4",
+          "tags": []
+        },
+        {
+          "case_id": "NG-139",
+          "gold": "Access & Locks / P2",
+          "got": "Access & Locks / P1",
+          "tags": []
+        },
+        {
+          "case_id": "NG-158",
+          "gold": "Access & Locks / P2",
+          "got": "Access & Locks / P1",
+          "tags": []
+        },
+        {
+          "case_id": "NG-159",
+          "gold": "Hardware/RMA / P1",
+          "got": "Access & Locks / P1",
+          "tags": [
+            "two_issues"
+          ]
+        },
+        {
+          "case_id": "NG-161",
+          "gold": "Hardware/RMA / P3",
+          "got": "Access & Locks / P3",
+          "tags": [
+            "short_sms"
+          ]
+        },
+        {
+          "case_id": "NG-168",
+          "gold": "Access & Locks / P1",
+          "got": "Hardware/RMA / P1",
+          "tags": []
+        },
+        {
+          "case_id": "NG-189",
+          "gold": "Resident App & Account / P3",
+          "got": "Access & Locks / P2",
+          "tags": []
+        },
+        {
+          "case_id": "NG-190",
+          "gold": "Hardware/RMA / P2",
+          "got": "Hardware/RMA / P3",
+          "tags": [
+            "ambiguous_category"
+          ]
+        },
+        {
+          "case_id": "NG-196",
+          "gold": "Resident App & Account / P3",
+          "got": "Thermostat/HVAC Controls / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-200",
+          "gold": "Access & Locks / P2",
+          "got": "Access & Locks / P1",
+          "tags": []
+        }
+      ]
+    },
+    "C": {
+      "cases": 60,
+      "both": 27,
+      "generator_both": 48,
+      "category": 45,
+      "category_ci": [
+        0.6276768905451521,
+        0.8422361442158816
+      ],
+      "priority": 36,
+      "priority_ci": [
+        0.47365824394206846,
+        0.714306969962345
+      ],
+      "queue": 48,
+      "p1_recall": [
+        15,
+        16
+      ],
+      "p1_recall_ci": [
+        0.7167073163197013,
+        0.9888809426916687
+      ],
+      "p1_precision": [
+        15,
+        19
+      ],
+      "under_triage": [
+        "NG-003",
+        "NG-005",
+        "NG-024",
+        "NG-027",
+        "NG-038",
+        "NG-041",
+        "NG-059",
+        "NG-069",
+        "NG-091",
+        "NG-095",
+        "NG-096",
+        "NG-113",
+        "NG-119",
+        "NG-127",
+        "NG-131",
+        "NG-138",
+        "NG-190"
+      ],
+      "over_triage": [
+        "NG-033",
+        "NG-097",
+        "NG-139",
+        "NG-158",
+        "NG-189",
+        "NG-194",
+        "NG-200"
+      ],
+      "priority_matrix": {
+        "P1": {
+          "P1": 15,
+          "P2": 0,
+          "P3": 1,
+          "P4": 0,
+          "none": 0
+        },
+        "P2": {
+          "P1": 4,
+          "P2": 4,
+          "P3": 10,
+          "P4": 0,
+          "none": 0
+        },
+        "P3": {
+          "P1": 0,
+          "P2": 1,
+          "P3": 13,
+          "P4": 6,
+          "none": 0
+        },
+        "P4": {
+          "P1": 0,
+          "P2": 0,
+          "P3": 2,
+          "P4": 4,
+          "none": 0
+        }
+      },
+      "category_confusions": [
+        {
+          "gold": "Hardware/RMA",
+          "got": "Access & Locks",
+          "count": 3
+        },
+        {
+          "gold": "Property Manager Admin",
+          "got": "Billing (property-level)",
+          "count": 2
+        },
+        {
+          "gold": "Property Manager Admin",
+          "got": "Hub & Connectivity",
+          "count": 2
+        },
+        {
+          "gold": "Resident App & Account",
+          "got": "Access & Locks",
+          "count": 2
+        },
+        {
+          "gold": "Access & Locks",
+          "got": "Hardware/RMA",
+          "count": 1
+        },
+        {
+          "gold": "Access & Locks",
+          "got": "Property Manager Admin",
+          "count": 1
+        },
+        {
+          "gold": "Spam/Other",
+          "got": "Resident App & Account",
+          "count": 1
+        },
+        {
+          "gold": "Resident App & Account",
+          "got": "Hub & Connectivity",
+          "count": 1
+        },
+        {
+          "gold": "Hub & Connectivity",
+          "got": "Thermostat/HVAC Controls",
+          "count": 1
+        },
+        {
+          "gold": "Resident App & Account",
+          "got": "Thermostat/HVAC Controls",
+          "count": 1
+        }
+      ],
+      "human_review": 0,
+      "revisions": 0,
+      "rule_overrides": 0,
+      "injection": {
+        "cases": 3,
+        "flagged": 3,
+        "unswayed": 2
+      },
+      "challenger": {
+        "challenged": 60,
+        "catch": 0,
+        "false_alarm": 0,
+        "miss": 36,
+        "agreed_right": 24,
+        "fixed": 0,
+        "broke": 0,
+        "draft_objections": 0,
+        "draft_accepted": 0
+      },
+      "cost_usd": 0.9328,
+      "cost_per_case": 0.01555,
+      "latency_p50": 8.1,
+      "latency_p95": 12.12,
+      "misses": [
+        {
+          "case_id": "NG-003",
+          "gold": "Access & Locks / P2",
+          "got": "Access & Locks / P3",
+          "tags": [
+            "duplicate_followup"
+          ]
+        },
+        {
+          "case_id": "NG-004",
+          "gold": "Access & Locks / P1",
+          "got": "Hardware/RMA / P1",
+          "tags": [
+            "non_english"
+          ]
+        },
+        {
+          "case_id": "NG-005",
+          "gold": "Hub & Connectivity / P2",
+          "got": "Hub & Connectivity / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-006",
+          "gold": "Property Manager Admin / P4",
+          "got": "Billing (property-level) / P4",
+          "tags": [
+            "non_english"
+          ]
+        },
+        {
+          "case_id": "NG-024",
+          "gold": "Hub & Connectivity / P2",
+          "got": "Hub & Connectivity / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-027",
+          "gold": "Access & Locks / P3",
+          "got": "Property Manager Admin / P4",
+          "tags": []
+        },
+        {
+          "case_id": "NG-033",
+          "gold": "Spam/Other / P4",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-038",
+          "gold": "Resident App & Account / P2",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-041",
+          "gold": "Resident App & Account / P2",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-059",
+          "gold": "Resident App & Account / P2",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-060",
+          "gold": "Property Manager Admin / P1",
+          "got": "Hub & Connectivity / P1",
+          "tags": [
+            "pm_vs_resident"
+          ]
+        },
+        {
+          "case_id": "NG-064",
+          "gold": "Property Manager Admin / P1",
+          "got": "Hub & Connectivity / P1",
+          "tags": []
+        },
+        {
+          "case_id": "NG-068",
+          "gold": "Resident App & Account / P1",
+          "got": "Access & Locks / P1",
+          "tags": [
+            "pm_vs_resident"
+          ]
+        },
+        {
+          "case_id": "NG-069",
+          "gold": "Resident App & Account / P3",
+          "got": "Resident App & Account / P4",
+          "tags": [
+            "non_english"
+          ]
+        },
+        {
+          "case_id": "NG-079",
+          "gold": "Resident App & Account / P3",
+          "got": "Hub & Connectivity / P3",
+          "tags": [
+            "injection"
+          ]
+        },
+        {
+          "case_id": "NG-091",
+          "gold": "Billing (property-level) / P3",
+          "got": "Billing (property-level) / P4",
+          "tags": []
+        },
+        {
+          "case_id": "NG-095",
+          "gold": "Leak/Sensor Alert / P2",
+          "got": "Leak/Sensor Alert / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-096",
+          "gold": "Thermostat/HVAC Controls / P3",
+          "got": "Thermostat/HVAC Controls / P4",
+          "tags": [
+            "two_issues"
+          ]
+        },
+        {
+          "case_id": "NG-097",
+          "gold": "Hub & Connectivity / P4",
+          "got": "Thermostat/HVAC Controls / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-113",
+          "gold": "Hardware/RMA / P2",
+          "got": "Access & Locks / P3",
+          "tags": [
+            "angry_caps"
+          ]
+        },
+        {
+          "case_id": "NG-119",
+          "gold": "Resident App & Account / P2",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-127",
+          "gold": "Property Manager Admin / P3",
+          "got": "Billing (property-level) / P4",
+          "tags": []
+        },
+        {
+          "case_id": "NG-131",
+          "gold": "Billing (property-level) / P1",
+          "got": "Billing (property-level) / P3",
+          "tags": [
+            "angry_caps"
+          ]
+        },
+        {
+          "case_id": "NG-138",
+          "gold": "Billing (property-level) / P3",
+          "got": "Billing (property-level) / P4",
+          "tags": []
+        },
+        {
+          "case_id": "NG-139",
+          "gold": "Access & Locks / P2",
+          "got": "Access & Locks / P1",
+          "tags": []
+        },
+        {
+          "case_id": "NG-158",
+          "gold": "Access & Locks / P2",
+          "got": "Access & Locks / P1",
+          "tags": []
+        },
+        {
+          "case_id": "NG-159",
+          "gold": "Hardware/RMA / P1",
+          "got": "Access & Locks / P1",
+          "tags": [
+            "two_issues"
+          ]
+        },
+        {
+          "case_id": "NG-161",
+          "gold": "Hardware/RMA / P3",
+          "got": "Access & Locks / P3",
+          "tags": [
+            "short_sms"
+          ]
+        },
+        {
+          "case_id": "NG-189",
+          "gold": "Resident App & Account / P3",
+          "got": "Access & Locks / P2",
+          "tags": []
+        },
+        {
+          "case_id": "NG-190",
+          "gold": "Hardware/RMA / P2",
+          "got": "Hardware/RMA / P3",
+          "tags": [
+            "ambiguous_category"
+          ]
+        },
+        {
+          "case_id": "NG-194",
+          "gold": "Access & Locks / P2",
+          "got": "Access & Locks / P1",
+          "tags": [
+            "angry_caps"
+          ]
+        },
+        {
+          "case_id": "NG-196",
+          "gold": "Resident App & Account / P3",
+          "got": "Thermostat/HVAC Controls / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-200",
+          "gold": "Access & Locks / P2",
+          "got": "Access & Locks / P1",
+          "tags": []
+        }
+      ]
+    },
+    "D": {
+      "cases": 60,
+      "both": 25,
+      "generator_both": 49,
+      "category": 43,
+      "category_ci": [
+        0.5923247495026482,
+        0.8149332139569141
+      ],
+      "priority": 36,
+      "priority_ci": [
+        0.47365824394206846,
+        0.714306969962345
+      ],
+      "queue": 48,
+      "p1_recall": [
+        15,
+        16
+      ],
+      "p1_recall_ci": [
+        0.7167073163197013,
+        0.9888809426916687
+      ],
+      "p1_precision": [
+        15,
+        19
+      ],
+      "under_triage": [
+        "NG-003",
+        "NG-005",
+        "NG-024",
+        "NG-027",
+        "NG-038",
+        "NG-041",
+        "NG-059",
+        "NG-069",
+        "NG-091",
+        "NG-095",
+        "NG-096",
+        "NG-113",
+        "NG-119",
+        "NG-127",
+        "NG-131",
+        "NG-138",
+        "NG-190"
+      ],
+      "over_triage": [
+        "NG-033",
+        "NG-097",
+        "NG-139",
+        "NG-158",
+        "NG-189",
+        "NG-194",
+        "NG-200"
+      ],
+      "priority_matrix": {
+        "P1": {
+          "P1": 15,
+          "P2": 0,
+          "P3": 1,
+          "P4": 0,
+          "none": 0
+        },
+        "P2": {
+          "P1": 4,
+          "P2": 4,
+          "P3": 10,
+          "P4": 0,
+          "none": 0
+        },
+        "P3": {
+          "P1": 0,
+          "P2": 1,
+          "P3": 13,
+          "P4": 6,
+          "none": 0
+        },
+        "P4": {
+          "P1": 0,
+          "P2": 0,
+          "P3": 2,
+          "P4": 4,
+          "none": 0
+        }
+      },
+      "category_confusions": [
+        {
+          "gold": "Resident App & Account",
+          "got": "Access & Locks",
+          "count": 3
+        },
+        {
+          "gold": "Hardware/RMA",
+          "got": "Access & Locks",
+          "count": 3
+        },
+        {
+          "gold": "Access & Locks",
+          "got": "Hardware/RMA",
+          "count": 2
+        },
+        {
+          "gold": "Property Manager Admin",
+          "got": "Billing (property-level)",
+          "count": 2
+        },
+        {
+          "gold": "Property Manager Admin",
+          "got": "Hub & Connectivity",
+          "count": 2
+        },
+        {
+          "gold": "Access & Locks",
+          "got": "Property Manager Admin",
+          "count": 1
+        },
+        {
+          "gold": "Spam/Other",
+          "got": "Resident App & Account",
+          "count": 1
+        },
+        {
+          "gold": "Resident App & Account",
+          "got": "Hub & Connectivity",
+          "count": 1
+        },
+        {
+          "gold": "Hub & Connectivity",
+          "got": "Thermostat/HVAC Controls",
+          "count": 1
+        },
+        {
+          "gold": "Resident App & Account",
+          "got": "Thermostat/HVAC Controls",
+          "count": 1
+        }
+      ],
+      "human_review": 0,
+      "revisions": 0,
+      "rule_overrides": 0,
+      "injection": {
+        "cases": 3,
+        "flagged": 3,
+        "unswayed": 2
+      },
+      "challenger": {
+        "challenged": 60,
+        "catch": 0,
+        "false_alarm": 0,
+        "miss": 38,
+        "agreed_right": 22,
+        "fixed": 0,
+        "broke": 0,
+        "draft_objections": 0,
+        "draft_accepted": 0
+      },
+      "cost_usd": 0.9213,
+      "cost_per_case": 0.01536,
+      "latency_p50": 7.52,
+      "latency_p95": 12.22,
+      "misses": [
+        {
+          "case_id": "NG-003",
+          "gold": "Access & Locks / P2",
+          "got": "Access & Locks / P3",
+          "tags": [
+            "duplicate_followup"
+          ]
+        },
+        {
+          "case_id": "NG-004",
+          "gold": "Access & Locks / P1",
+          "got": "Hardware/RMA / P1",
+          "tags": [
+            "non_english"
+          ]
+        },
+        {
+          "case_id": "NG-005",
+          "gold": "Hub & Connectivity / P2",
+          "got": "Hub & Connectivity / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-006",
+          "gold": "Property Manager Admin / P4",
+          "got": "Billing (property-level) / P4",
+          "tags": [
+            "non_english"
+          ]
+        },
+        {
+          "case_id": "NG-024",
+          "gold": "Hub & Connectivity / P2",
+          "got": "Hub & Connectivity / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-027",
+          "gold": "Access & Locks / P3",
+          "got": "Property Manager Admin / P4",
+          "tags": []
+        },
+        {
+          "case_id": "NG-033",
+          "gold": "Spam/Other / P4",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-038",
+          "gold": "Resident App & Account / P2",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-041",
+          "gold": "Resident App & Account / P2",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-059",
+          "gold": "Resident App & Account / P2",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-060",
+          "gold": "Property Manager Admin / P1",
+          "got": "Hub & Connectivity / P1",
+          "tags": [
+            "pm_vs_resident"
+          ]
+        },
+        {
+          "case_id": "NG-064",
+          "gold": "Property Manager Admin / P1",
+          "got": "Hub & Connectivity / P1",
+          "tags": []
+        },
+        {
+          "case_id": "NG-068",
+          "gold": "Resident App & Account / P1",
+          "got": "Access & Locks / P1",
+          "tags": [
+            "pm_vs_resident"
+          ]
+        },
+        {
+          "case_id": "NG-069",
+          "gold": "Resident App & Account / P3",
+          "got": "Resident App & Account / P4",
+          "tags": [
+            "non_english"
+          ]
+        },
+        {
+          "case_id": "NG-079",
+          "gold": "Resident App & Account / P3",
+          "got": "Hub & Connectivity / P3",
+          "tags": [
+            "injection"
+          ]
+        },
+        {
+          "case_id": "NG-089",
+          "gold": "Resident App & Account / P1",
+          "got": "Access & Locks / P1",
+          "tags": [
+            "ambiguous_category"
+          ]
+        },
+        {
+          "case_id": "NG-091",
+          "gold": "Billing (property-level) / P3",
+          "got": "Billing (property-level) / P4",
+          "tags": []
+        },
+        {
+          "case_id": "NG-095",
+          "gold": "Leak/Sensor Alert / P2",
+          "got": "Leak/Sensor Alert / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-096",
+          "gold": "Thermostat/HVAC Controls / P3",
+          "got": "Thermostat/HVAC Controls / P4",
+          "tags": [
+            "two_issues"
+          ]
+        },
+        {
+          "case_id": "NG-097",
+          "gold": "Hub & Connectivity / P4",
+          "got": "Thermostat/HVAC Controls / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-113",
+          "gold": "Hardware/RMA / P2",
+          "got": "Access & Locks / P3",
+          "tags": [
+            "angry_caps"
+          ]
+        },
+        {
+          "case_id": "NG-119",
+          "gold": "Resident App & Account / P2",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-127",
+          "gold": "Property Manager Admin / P3",
+          "got": "Billing (property-level) / P4",
+          "tags": []
+        },
+        {
+          "case_id": "NG-131",
+          "gold": "Billing (property-level) / P1",
+          "got": "Billing (property-level) / P3",
+          "tags": [
+            "angry_caps"
+          ]
+        },
+        {
+          "case_id": "NG-138",
+          "gold": "Billing (property-level) / P3",
+          "got": "Billing (property-level) / P4",
+          "tags": []
+        },
+        {
+          "case_id": "NG-139",
+          "gold": "Access & Locks / P2",
+          "got": "Access & Locks / P1",
+          "tags": []
+        },
+        {
+          "case_id": "NG-158",
+          "gold": "Access & Locks / P2",
+          "got": "Access & Locks / P1",
+          "tags": []
+        },
+        {
+          "case_id": "NG-159",
+          "gold": "Hardware/RMA / P1",
+          "got": "Access & Locks / P1",
+          "tags": [
+            "two_issues"
+          ]
+        },
+        {
+          "case_id": "NG-161",
+          "gold": "Hardware/RMA / P3",
+          "got": "Access & Locks / P3",
+          "tags": [
+            "short_sms"
+          ]
+        },
+        {
+          "case_id": "NG-168",
+          "gold": "Access & Locks / P1",
+          "got": "Hardware/RMA / P1",
+          "tags": []
+        },
+        {
+          "case_id": "NG-189",
+          "gold": "Resident App & Account / P3",
+          "got": "Access & Locks / P2",
+          "tags": []
+        },
+        {
+          "case_id": "NG-190",
+          "gold": "Hardware/RMA / P2",
+          "got": "Hardware/RMA / P3",
+          "tags": [
+            "ambiguous_category"
+          ]
+        },
+        {
+          "case_id": "NG-194",
+          "gold": "Access & Locks / P2",
+          "got": "Access & Locks / P1",
+          "tags": [
+            "angry_caps"
+          ]
+        },
+        {
+          "case_id": "NG-196",
+          "gold": "Resident App & Account / P3",
+          "got": "Thermostat/HVAC Controls / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-200",
+          "gold": "Access & Locks / P2",
+          "got": "Access & Locks / P1",
+          "tags": []
+        }
+      ]
+    },
+    "E": {
+      "cases": 60,
+      "both": 27,
+      "generator_both": 45,
+      "category": 45,
+      "category_ci": [
+        0.6276768905451521,
+        0.8422361442158816
+      ],
+      "priority": 37,
+      "priority_ci": [
+        0.4901736454040315,
+        0.7291191041511176
+      ],
+      "queue": 47,
+      "p1_recall": [
+        15,
+        16
+      ],
+      "p1_recall_ci": [
+        0.7167073163197013,
+        0.9888809426916687
+      ],
+      "p1_precision": [
+        15,
+        18
+      ],
+      "under_triage": [
+        "NG-003",
+        "NG-005",
+        "NG-024",
+        "NG-027",
+        "NG-038",
+        "NG-041",
+        "NG-059",
+        "NG-069",
+        "NG-095",
+        "NG-096",
+        "NG-113",
+        "NG-119",
+        "NG-127",
+        "NG-131",
+        "NG-138",
+        "NG-190"
+      ],
+      "over_triage": [
+        "NG-033",
+        "NG-053",
+        "NG-072",
+        "NG-097",
+        "NG-139",
+        "NG-158",
+        "NG-200"
+      ],
+      "priority_matrix": {
+        "P1": {
+          "P1": 15,
+          "P2": 0,
+          "P3": 1,
+          "P4": 0,
+          "none": 0
+        },
+        "P2": {
+          "P1": 3,
+          "P2": 5,
+          "P3": 10,
+          "P4": 0,
+          "none": 0
+        },
+        "P3": {
+          "P1": 0,
+          "P2": 0,
+          "P3": 15,
+          "P4": 5,
+          "none": 0
+        },
+        "P4": {
+          "P1": 0,
+          "P2": 0,
+          "P3": 4,
+          "P4": 2,
+          "none": 0
+        }
+      },
+      "category_confusions": [
+        {
+          "gold": "Hardware/RMA",
+          "got": "Access & Locks",
+          "count": 3
+        },
+        {
+          "gold": "Property Manager Admin",
+          "got": "Billing (property-level)",
+          "count": 2
+        },
+        {
+          "gold": "Property Manager Admin",
+          "got": "Hub & Connectivity",
+          "count": 2
+        },
+        {
+          "gold": "Resident App & Account",
+          "got": "Access & Locks",
+          "count": 2
+        },
+        {
+          "gold": "Access & Locks",
+          "got": "Property Manager Admin",
+          "count": 1
+        },
+        {
+          "gold": "Spam/Other",
+          "got": "Resident App & Account",
+          "count": 1
+        },
+        {
+          "gold": "Resident App & Account",
+          "got": "Hub & Connectivity",
+          "count": 1
+        },
+        {
+          "gold": "Hub & Connectivity",
+          "got": "Thermostat/HVAC Controls",
+          "count": 1
+        },
+        {
+          "gold": "Move-in/Move-out Provisioning",
+          "got": "Resident App & Account",
+          "count": 1
+        },
+        {
+          "gold": "Resident App & Account",
+          "got": "Thermostat/HVAC Controls",
+          "count": 1
+        }
+      ],
+      "human_review": 0,
+      "revisions": 0,
+      "rule_overrides": 0,
+      "injection": {
+        "cases": 3,
+        "flagged": 3,
+        "unswayed": 2
+      },
+      "challenger": {
+        "challenged": 0,
+        "catch": 0,
+        "false_alarm": 0,
+        "miss": 0,
+        "agreed_right": 0,
+        "fixed": 0,
+        "broke": 0,
+        "draft_objections": 0,
+        "draft_accepted": 0
+      },
+      "cost_usd": 0.0218,
+      "cost_per_case": 0.00036,
+      "latency_p50": 3.67,
+      "latency_p95": 5.66,
+      "misses": [
+        {
+          "case_id": "NG-003",
+          "gold": "Access & Locks / P2",
+          "got": "Access & Locks / P3",
+          "tags": [
+            "duplicate_followup"
+          ]
+        },
+        {
+          "case_id": "NG-005",
+          "gold": "Hub & Connectivity / P2",
+          "got": "Hub & Connectivity / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-006",
+          "gold": "Property Manager Admin / P4",
+          "got": "Billing (property-level) / P4",
+          "tags": [
+            "non_english"
+          ]
+        },
+        {
+          "case_id": "NG-024",
+          "gold": "Hub & Connectivity / P2",
+          "got": "Hub & Connectivity / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-027",
+          "gold": "Access & Locks / P3",
+          "got": "Property Manager Admin / P4",
+          "tags": []
+        },
+        {
+          "case_id": "NG-033",
+          "gold": "Spam/Other / P4",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-038",
+          "gold": "Resident App & Account / P2",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-041",
+          "gold": "Resident App & Account / P2",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-053",
+          "gold": "Access & Locks / P4",
+          "got": "Access & Locks / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-059",
+          "gold": "Resident App & Account / P2",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-060",
+          "gold": "Property Manager Admin / P1",
+          "got": "Hub & Connectivity / P1",
+          "tags": [
+            "pm_vs_resident"
+          ]
+        },
+        {
+          "case_id": "NG-064",
+          "gold": "Property Manager Admin / P1",
+          "got": "Hub & Connectivity / P1",
+          "tags": []
+        },
+        {
+          "case_id": "NG-068",
+          "gold": "Resident App & Account / P1",
+          "got": "Access & Locks / P1",
+          "tags": [
+            "pm_vs_resident"
+          ]
+        },
+        {
+          "case_id": "NG-069",
+          "gold": "Resident App & Account / P3",
+          "got": "Resident App & Account / P4",
+          "tags": [
+            "non_english"
+          ]
+        },
+        {
+          "case_id": "NG-072",
+          "gold": "Access & Locks / P4",
+          "got": "Access & Locks / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-079",
+          "gold": "Resident App & Account / P3",
+          "got": "Hub & Connectivity / P3",
+          "tags": [
+            "injection"
+          ]
+        },
+        {
+          "case_id": "NG-095",
+          "gold": "Leak/Sensor Alert / P2",
+          "got": "Leak/Sensor Alert / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-096",
+          "gold": "Thermostat/HVAC Controls / P3",
+          "got": "Thermostat/HVAC Controls / P4",
+          "tags": [
+            "two_issues"
+          ]
+        },
+        {
+          "case_id": "NG-097",
+          "gold": "Hub & Connectivity / P4",
+          "got": "Thermostat/HVAC Controls / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-113",
+          "gold": "Hardware/RMA / P2",
+          "got": "Access & Locks / P3",
+          "tags": [
+            "angry_caps"
+          ]
+        },
+        {
+          "case_id": "NG-119",
+          "gold": "Resident App & Account / P2",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-122",
+          "gold": "Move-in/Move-out Provisioning / P3",
+          "got": "Resident App & Account / P3",
+          "tags": [
+            "ambiguous_category"
+          ]
+        },
+        {
+          "case_id": "NG-127",
+          "gold": "Property Manager Admin / P3",
+          "got": "Billing (property-level) / P4",
+          "tags": []
+        },
+        {
+          "case_id": "NG-131",
+          "gold": "Billing (property-level) / P1",
+          "got": "Billing (property-level) / P3",
+          "tags": [
+            "angry_caps"
+          ]
+        },
+        {
+          "case_id": "NG-138",
+          "gold": "Billing (property-level) / P3",
+          "got": "Billing (property-level) / P4",
+          "tags": []
+        },
+        {
+          "case_id": "NG-139",
+          "gold": "Access & Locks / P2",
+          "got": "Access & Locks / P1",
+          "tags": []
+        },
+        {
+          "case_id": "NG-158",
+          "gold": "Access & Locks / P2",
+          "got": "Access & Locks / P1",
+          "tags": []
+        },
+        {
+          "case_id": "NG-159",
+          "gold": "Hardware/RMA / P1",
+          "got": "Access & Locks / P1",
+          "tags": [
+            "two_issues"
+          ]
+        },
+        {
+          "case_id": "NG-161",
+          "gold": "Hardware/RMA / P3",
+          "got": "Access & Locks / P3",
+          "tags": [
+            "short_sms"
+          ]
+        },
+        {
+          "case_id": "NG-189",
+          "gold": "Resident App & Account / P3",
+          "got": "Access & Locks / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-190",
+          "gold": "Hardware/RMA / P2",
+          "got": "Hardware/RMA / P3",
+          "tags": [
+            "ambiguous_category"
+          ]
+        },
+        {
+          "case_id": "NG-196",
+          "gold": "Resident App & Account / P3",
+          "got": "Thermostat/HVAC Controls / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-200",
+          "gold": "Access & Locks / P2",
+          "got": "Access & Locks / P1",
+          "tags": []
+        }
+      ]
+    },
+    "F": {
+      "cases": 60,
+      "both": 27,
+      "generator_both": 47,
+      "category": 44,
+      "category_ci": [
+        0.6099104639810865,
+        0.8286750351292115
+      ],
+      "priority": 36,
+      "priority_ci": [
+        0.47365824394206846,
+        0.714306969962345
+      ],
+      "queue": 46,
+      "p1_recall": [
+        15,
+        16
+      ],
+      "p1_recall_ci": [
+        0.7167073163197013,
+        0.9888809426916687
+      ],
+      "p1_precision": [
+        15,
+        18
+      ],
+      "under_triage": [
+        "NG-003",
+        "NG-005",
+        "NG-024",
+        "NG-027",
+        "NG-038",
+        "NG-041",
+        "NG-059",
+        "NG-069",
+        "NG-091",
+        "NG-095",
+        "NG-096",
+        "NG-113",
+        "NG-119",
+        "NG-127",
+        "NG-131",
+        "NG-138",
+        "NG-190"
+      ],
+      "over_triage": [
+        "NG-033",
+        "NG-072",
+        "NG-097",
+        "NG-139",
+        "NG-158",
+        "NG-189",
+        "NG-200"
+      ],
+      "priority_matrix": {
+        "P1": {
+          "P1": 15,
+          "P2": 0,
+          "P3": 1,
+          "P4": 0,
+          "none": 0
+        },
+        "P2": {
+          "P1": 3,
+          "P2": 5,
+          "P3": 10,
+          "P4": 0,
+          "none": 0
+        },
+        "P3": {
+          "P1": 0,
+          "P2": 1,
+          "P3": 13,
+          "P4": 6,
+          "none": 0
+        },
+        "P4": {
+          "P1": 0,
+          "P2": 0,
+          "P3": 3,
+          "P4": 3,
+          "none": 0
+        }
+      },
+      "category_confusions": [
+        {
+          "gold": "Resident App & Account",
+          "got": "Access & Locks",
+          "count": 3
+        },
+        {
+          "gold": "Hardware/RMA",
+          "got": "Access & Locks",
+          "count": 3
+        },
+        {
+          "gold": "Property Manager Admin",
+          "got": "Billing (property-level)",
+          "count": 2
+        },
+        {
+          "gold": "Property Manager Admin",
+          "got": "Hub & Connectivity",
+          "count": 2
+        },
+        {
+          "gold": "Access & Locks",
+          "got": "Property Manager Admin",
+          "count": 1
+        },
+        {
+          "gold": "Spam/Other",
+          "got": "Resident App & Account",
+          "count": 1
+        },
+        {
+          "gold": "Resident App & Account",
+          "got": "Hub & Connectivity",
+          "count": 1
+        },
+        {
+          "gold": "Thermostat/HVAC Controls",
+          "got": "Move-in/Move-out Provisioning",
+          "count": 1
+        },
+        {
+          "gold": "Hub & Connectivity",
+          "got": "Thermostat/HVAC Controls",
+          "count": 1
+        },
+        {
+          "gold": "Resident App & Account",
+          "got": "Thermostat/HVAC Controls",
+          "count": 1
+        }
+      ],
+      "human_review": 0,
+      "revisions": 11,
+      "rule_overrides": 0,
+      "injection": {
+        "cases": 3,
+        "flagged": 3,
+        "unswayed": 2
+      },
+      "challenger": {
+        "challenged": 60,
+        "catch": 3,
+        "false_alarm": 0,
+        "miss": 35,
+        "agreed_right": 22,
+        "fixed": 1,
+        "broke": 0,
+        "draft_objections": 8,
+        "draft_accepted": 8
+      },
+      "cost_usd": 0.5009,
+      "cost_per_case": 0.00835,
+      "latency_p50": 6.94,
+      "latency_p95": 19.52,
+      "misses": [
+        {
+          "case_id": "NG-003",
+          "gold": "Access & Locks / P2",
+          "got": "Access & Locks / P3",
+          "tags": [
+            "duplicate_followup"
+          ]
+        },
+        {
+          "case_id": "NG-005",
+          "gold": "Hub & Connectivity / P2",
+          "got": "Hub & Connectivity / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-006",
+          "gold": "Property Manager Admin / P4",
+          "got": "Billing (property-level) / P4",
+          "tags": [
+            "non_english"
+          ]
+        },
+        {
+          "case_id": "NG-024",
+          "gold": "Hub & Connectivity / P2",
+          "got": "Hub & Connectivity / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-027",
+          "gold": "Access & Locks / P3",
+          "got": "Property Manager Admin / P4",
+          "tags": []
+        },
+        {
+          "case_id": "NG-033",
+          "gold": "Spam/Other / P4",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-038",
+          "gold": "Resident App & Account / P2",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-041",
+          "gold": "Resident App & Account / P2",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-059",
+          "gold": "Resident App & Account / P2",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-060",
+          "gold": "Property Manager Admin / P1",
+          "got": "Hub & Connectivity / P1",
+          "tags": [
+            "pm_vs_resident"
+          ]
+        },
+        {
+          "case_id": "NG-064",
+          "gold": "Property Manager Admin / P1",
+          "got": "Hub & Connectivity / P1",
+          "tags": []
+        },
+        {
+          "case_id": "NG-068",
+          "gold": "Resident App & Account / P1",
+          "got": "Access & Locks / P1",
+          "tags": [
+            "pm_vs_resident"
+          ]
+        },
+        {
+          "case_id": "NG-069",
+          "gold": "Resident App & Account / P3",
+          "got": "Resident App & Account / P4",
+          "tags": [
+            "non_english"
+          ]
+        },
+        {
+          "case_id": "NG-072",
+          "gold": "Access & Locks / P4",
+          "got": "Access & Locks / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-079",
+          "gold": "Resident App & Account / P3",
+          "got": "Hub & Connectivity / P3",
+          "tags": [
+            "injection"
+          ]
+        },
+        {
+          "case_id": "NG-089",
+          "gold": "Resident App & Account / P1",
+          "got": "Access & Locks / P1",
+          "tags": [
+            "ambiguous_category"
+          ]
+        },
+        {
+          "case_id": "NG-091",
+          "gold": "Billing (property-level) / P3",
+          "got": "Billing (property-level) / P4",
+          "tags": []
+        },
+        {
+          "case_id": "NG-095",
+          "gold": "Leak/Sensor Alert / P2",
+          "got": "Leak/Sensor Alert / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-096",
+          "gold": "Thermostat/HVAC Controls / P3",
+          "got": "Move-in/Move-out Provisioning / P4",
+          "tags": [
+            "two_issues"
+          ]
+        },
+        {
+          "case_id": "NG-097",
+          "gold": "Hub & Connectivity / P4",
+          "got": "Thermostat/HVAC Controls / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-113",
+          "gold": "Hardware/RMA / P2",
+          "got": "Access & Locks / P3",
+          "tags": [
+            "angry_caps"
+          ]
+        },
+        {
+          "case_id": "NG-119",
+          "gold": "Resident App & Account / P2",
+          "got": "Resident App & Account / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-127",
+          "gold": "Property Manager Admin / P3",
+          "got": "Billing (property-level) / P4",
+          "tags": []
+        },
+        {
+          "case_id": "NG-131",
+          "gold": "Billing (property-level) / P1",
+          "got": "Billing (property-level) / P3",
+          "tags": [
+            "angry_caps"
+          ]
+        },
+        {
+          "case_id": "NG-138",
+          "gold": "Billing (property-level) / P3",
+          "got": "Billing (property-level) / P4",
+          "tags": []
+        },
+        {
+          "case_id": "NG-139",
+          "gold": "Access & Locks / P2",
+          "got": "Access & Locks / P1",
+          "tags": []
+        },
+        {
+          "case_id": "NG-158",
+          "gold": "Access & Locks / P2",
+          "got": "Access & Locks / P1",
+          "tags": []
+        },
+        {
+          "case_id": "NG-159",
+          "gold": "Hardware/RMA / P1",
+          "got": "Access & Locks / P1",
+          "tags": [
+            "two_issues"
+          ]
+        },
+        {
+          "case_id": "NG-161",
+          "gold": "Hardware/RMA / P3",
+          "got": "Access & Locks / P3",
+          "tags": [
+            "short_sms"
+          ]
+        },
+        {
+          "case_id": "NG-189",
+          "gold": "Resident App & Account / P3",
+          "got": "Access & Locks / P2",
+          "tags": []
+        },
+        {
+          "case_id": "NG-190",
+          "gold": "Hardware/RMA / P2",
+          "got": "Hardware/RMA / P3",
+          "tags": [
+            "ambiguous_category"
+          ]
+        },
+        {
+          "case_id": "NG-196",
+          "gold": "Resident App & Account / P3",
+          "got": "Thermostat/HVAC Controls / P3",
+          "tags": []
+        },
+        {
+          "case_id": "NG-200",
+          "gold": "Access & Locks / P2",
+          "got": "Access & Locks / P1",
+          "tags": []
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "note": "Claude's readings of answers whose note and verdict disagree, plus card decisions after the page. Each says where it came from.",
+  "cases": {
+    "NG-097": {
+      "verdict": "system",
+      "category": "Resident App & Account",
+      "priority": "P3",
+      "why": "I don't actually think mine's right. I think there should have been an app one. That is the base issue, right? The app is not doing it correctly [Marked 'mine stands' on the page; Claude read the note as a correction to Resident App & Account P3, matching NG-196.]"
+    },
+    "NG-033": {
+      "verdict": "system",
+      "category": "Resident App & Account",
+      "priority": "P3",
+      "why": "Left blank on the page; on a card (2026-11-03) he picked Resident App & Account P3, what all six pipelines said. Spam/Other was a mis-click."
+    },
+    "NG-064": {
+      "verdict": "system",
+      "category": "Hub & Connectivity",
+      "priority": "P1",
+      "why": "It really should be access control. gateway and hub/connectivity should be different [Card, 2026-11-03: Hub & Connectivity for now, matching NG-060; a Building Gateway category is next work.]"
+    },
+    "NG-131": {
+      "verdict": "system",
+      "category": "Billing (property-level)",
+      "priority": "P2",
+      "why": "Yeah I guess it's not a priority event but I think, because it mentioned legal, that's why I defaulted. Maybe we can split the difference [Card, 2026-11-03: P2, and a legal threat is at least P2 in taxonomy v0.6.]"
+    },
+    "NG-065": {
+      "verdict": "system",
+      "category": "Hardware/RMA",
+      "priority": "P3",
+      "why": "Card, 2026-11-03: 'battery should be its own category, but if we're keeping the current ones, it should be Hardware/RMA.' NG-065 is the sensor low-battery chirp."
+    }
+  }
+}
